@@ -1,0 +1,101 @@
+.borderRaduis {
+  border-radius: 4px;
+}
+
+.firstButtons {
+  background: linear-gradient(to bottom, #e2e2e2, #e1e1e1);
+  margin-top: 10px;
+  color: #00000080;
+  text-align: center;
+  cursor: pointer;
+}
+
+.firstButtonsColor {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.firstButtonsFont {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.backButton {
+  letter-spacing: 0.075em;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.line {
+  width: 2px;
+  height: auto;
+  background-color: #cfcfcf;
+  margin-top: 10px;
+}
+
+.courseVisitor {
+  span {
+    font-size: 12px;
+    color: #3fa366;
+    white-space: nowrap;
+  }
+}
+
+.courseTitle {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 29.3px;
+}
+
+.courseSectorFont {
+  vertical-align: middle;
+  margin: 12px 0 0 10px;
+  span {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+  }
+  p {
+    font-size: 13px;
+    color: #1484b5;
+    font-weight: 500;
+  }
+}
+
+.secondButtons1 {
+  background-color: #c2dfc1;
+  text-align: center;
+}
+.secondButtons2 {
+  text-align: center;
+  background: linear-gradient(to bottom, #43c750, #009954);
+}
+
+.secondButtonsFont {
+  font-size: 11px;
+  white-space: nowrap;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.66);
+  text-transform: uppercase;
+  letter-spacing: 11%;
+}
+
+.courseBookingLabel {
+  background-color: #b71e1e;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+  }
+}
+
+
