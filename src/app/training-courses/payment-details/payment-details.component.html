@@ -6,54 +6,40 @@
         <div class="titleLine"></div>
     </div>
     <div class="col-md-12">
-        <form>
-            <div class="form-row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12">
-                            <label for="Payment_Method">Payment Method</label>
-                            <div class="custom-select-container mb-4 w-75">
-                                <select>
-                                    <option value="" disabled selected></option>
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </select>
-                            </div>
-                            <span class="FeesDetailsFont">Per Participent Fees Details</span>
-                            <div class="paymentNumber p-3 mt-1">
-                                <h6>3,900 Dollars</h6>
-                                <p>Fees + VAT as applicable</p>
-                            </div>
+
+        <div class="form-row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <label for="Payment_Method">Payment Method</label>
+                        <div class="custom-select-container mb-4 w-75">
+                            <select>
+                                <option value="" disabled selected></option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
                         </div>
-
-                        <div class="col-md-5 col-sm-12">
-                            <div class="smileImage d-flex align-items-center justify-content-center mb-2 mt-lg-0 mt-2">
-                                <img alt="" src="/assets/smile.png" width="100">
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <img alt="" src="/assets/thankYou.png" width="70%" class="img-fluid mt-1">
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="row align-items-center ">
-                                <div class="col-md-6">
-                                    <div class="backButton d-flex justify-content-md-end justify-content-center">
-                                        <a class="btn mt-4 mr-md-0 mr-5">Back</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="bookCourseButton mr-5 mt-md-4 mt-2 py-2">
-                                        <a class="btn">Book Course</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <span class="FeesDetailsFont">Per Participent Fees Details</span>
+                        <div class="paymentNumber p-3 mt-1">
+                            <h6>{{courseFees}} Dollars</h6>
+                            <p>Fees + VAT as applicable</p>
                         </div>
                     </div>
+
+                    <div class="col-md-5 col-sm-12">
+                        <div class="smileImage d-flex align-items-center justify-content-center mb-2 mt-lg-0 mt-2">
+                            <img alt="" src="/assets/smile.png" width="100">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img alt="" src="/assets/thankYou.png" width="70%" class="img-fluid mt-1">
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        </form>
+        </div>
+
     </div>
 </div>

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SharedRoutingModule } from './shared-routing.module';
-
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { SharedRoutingModule } from './shared-routing.module';
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    HttpClientModule,
   ],
   exports:[
     NavbarComponent,

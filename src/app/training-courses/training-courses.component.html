@@ -18,11 +18,12 @@
                     </div>
                 </div>
                 <div class="col-lg col-md col-sm mr-1 courseVisitor my-4">
-                    <span class="float-right"> 223 Course Visitor </span>
+                    <span class="float-right"> {{courseDetails.course_visits?courseDetails.course_visits:null}} Course
+                        Visitor </span>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 courseVisitor ml-3  ml-lg-5 ">
-                    <span> Course Code: G-CA001 </span>
-                    <h3 class="courseTitle">Contract Management Principles and Practices</h3>
+                    <span> Course Code: {{courseDetails.course_code?courseDetails.course_code:null}} </span>
+                    <h3 class="courseTitle">{{courseDetails.course_name?courseDetails.course_name:null}}</h3>
                 </div>
             </div>
 
@@ -33,7 +34,7 @@
                         <img alt="course_sector" src="/assets/course_sector.png" width="60" class="img-fluid">
                         <span class="courseSectorFont">
                             <span>Course Sector:</span>
-                            <p class="">Interpersonal Skills and Self Development</p>
+                            <p class="">{{courseDetails.course_sectors?courseDetails.course_sectors[0].name:null}}</p>
                         </span>
                     </div>
                 </span>
@@ -59,17 +60,35 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <!-- form 1 course-details-form -->
-            <app-course-details-form></app-course-details-form>
+            <!-- course-details-form -->
+            <app-course-details-form [courseDetails]="courseFormData"></app-course-details-form>
 
-            <!-- form 2  personal-details-form-->
-            <app-personal-details-form></app-personal-details-form>
+            <!-- personal-details-form-->
+            <app-personal-details-form (personalDetails)="getPersonalDetails($event)"></app-personal-details-form>
 
             <!-- Payment Details -->
-            <app-payment-details></app-payment-details>
-            
+            <app-payment-details [courseFees]="courseFormData.course_fees"></app-payment-details>
+
+            <!-- submit button -->
+            <div class="col-md-12 pt-1">
+                <div class="row align-items-center ">
+                    <div class="col-md-6">
+                        <div class="backButton d-flex justify-content-md-end justify-content-center">
+                            <a class="btn mt-4 mr-md-0 mr-5">Back</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bookCourseButton mr-5 mt-md-4 mt-2 py-2">
+                            <a class="btn" (click)="bookCourse()">Book Course</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
         <!-- vertical line -->
@@ -91,6 +110,7 @@
                 <div class="col-md-12"></div>
             </div>
         </div>
+
 
     </div>
 

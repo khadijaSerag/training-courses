@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { CourseDetailsFormComponent } from './training-courses/course-details-form/course-details-form.component';
 import { PersonalDetailsFormComponent } from './training-courses/personal-details-form/personal-details-form.component';
 import { PaymentDetailsComponent } from './training-courses/payment-details/payment-details.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,15 +29,19 @@ import { PaymentDetailsComponent } from './training-courses/payment-details/paym
     InHouseTrainingComponent,
     CourseDetailsFormComponent,
     PersonalDetailsFormComponent,
-    PaymentDetailsComponent
+    PaymentDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right',
+    }),
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
